@@ -19,7 +19,6 @@ public class AdaptadorRcv extends RecyclerView.Adapter<HolderRcV> {
         for (int i = 0; i < 5; i++) {
             lista.add(new HolderData("bocata" + i));
         }
-
     }
 
     @NonNull
