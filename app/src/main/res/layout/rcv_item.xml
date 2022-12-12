@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fondo"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="250dp">
 
 
         <ImageView
@@ -41,6 +42,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:srcCompat="@drawable/star_img" />
+
+        <ImageView
+            android:id="@+id/img_promocional"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:rotation="50"
+            android:src="@drawable/linea"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2">
+
+        </ImageView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.87" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

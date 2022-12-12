@@ -14,10 +14,17 @@ import java.util.ArrayList;
 public class AdaptadorRcv extends RecyclerView.Adapter<HolderRcV> {
 
     ArrayList<HolderData> lista;
+
     public AdaptadorRcv() {
         this.lista = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             lista.add(new HolderData("bocata" + i));
+            if (i%2 < 1)
+                lista.get(i).isPromo = true;
+            else
+                lista.get(i).isPromo = false;
+
+
         }
     }
 
@@ -32,6 +39,7 @@ public class AdaptadorRcv extends RecyclerView.Adapter<HolderRcV> {
     @Override
     public void onBindViewHolder(@NonNull HolderRcV holder, int position) {
         holder.setTitulo(lista.get(position).nombre);
+        holder.setPromo(lista.get(position).isPromo);
     }
 
     @Override
