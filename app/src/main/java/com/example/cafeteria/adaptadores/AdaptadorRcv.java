@@ -1,4 +1,4 @@
-package com.example.cafeteria;
+package com.example.cafeteria.adaptadores;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cafeteria.HolderData;
+import com.example.cafeteria.R;
 import com.example.cafeteria.vistas.HolderRcV;
 
 import java.util.ArrayList;
